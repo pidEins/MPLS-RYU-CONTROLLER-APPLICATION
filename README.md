@@ -17,7 +17,7 @@ To run this application, please follow the below mentioned steps
    ryu-manager --verbose rest_mpls.py
    
    
-Configuration using REST API:
+### Configuration using REST API:
 
 1. This application provides the REST API interface to configure the addresses/prefix. 
 
@@ -34,7 +34,9 @@ Configuration using REST API:
 
    curl -X POST -d '{ "prefix" : "10.10.1.0/24", "port" : "2", "router_type": "ler" }'       http://localhost:8080/router/0000000000000001
 
-   Here prefix means, OVS1 can reach "10.10.1.0/24" address through port number 2.
-      router_type : it can be either edge (ler) or intermediate router (lsr). 
+   Here 
+   1.prefix means, OVS1 can reach "10.10.1.0/24" address through port number 
+   2.router_type : it can be either edge (ler) or intermediate router (lsr). 
 
-![](file:///C:/Users/jsing/OneDrive/Pictures/Image1.png)
+## Overall Desgin
+
