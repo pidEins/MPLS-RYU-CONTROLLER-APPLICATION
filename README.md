@@ -35,8 +35,10 @@ To run this application, please follow the below mentioned steps
    curl -X POST -d '{ "prefix" : "10.10.1.0/24", "port" : "2", "router_type": "ler" }'       http://localhost:8080/router/0000000000000001
 
    Here 
-   1.prefix means, OVS1 can reach "10.10.1.0/24" address through port number 
+   1.prefix means, OVS1 can reach "10.10.1.0/24" address through port number. 
    2.router_type : it can be either edge (ler) or intermediate router (lsr). 
 
 ## Overall Desgin
+
+![image1](https://cloud.githubusercontent.com/assets/18468187/21739441/0f426b54-d469-11e6-8497-1b713803b463.png)
 
