@@ -36,3 +36,5 @@ Configuration using REST API:
 
    Here prefix means, OVS1 can reach "10.10.1.0/24" address through port number 2.
       router_type : it can be either edge (ler) or intermediate router (lsr). 
+
+![](file:///C:/Users/jsing/OneDrive/Pictures/Image1.png)
