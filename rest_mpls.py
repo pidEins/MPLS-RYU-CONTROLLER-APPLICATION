@@ -23,7 +23,8 @@ from ryu.lib.packet import arp
 from ryu.lib.packet import ethernet
 from ryu.lib.packet import icmp
 from ryu.lib.packet import ipv4
-from ryu.lib.packet import packetfrom ryu.lib.packet import tcp
+from ryu.lib.packet import packet
+from ryu.lib.packet import tcp
 from ryu.lib.packet import udp
 from ryu.lib.packet import vlan
 from ryu.ofproto import ether
@@ -85,7 +86,8 @@ COOKIE_SHIFT_VLANID = 32
 COOKIE_SHIFT_ROUTEID = 16
 DEFAULT_ROUTE = '0.0.0.0/0'
 IDLE_TIMEOUT = 1800 # sec
-DEFAULT_TTL = 64REST_COMMAND_RESULT = 'command_result'
+DEFAULT_TTL = 64
+REST_COMMAND_RESULT = 'command_result'
 REST_RESULT = 'result'
 REST_DETAILS = 'details'
 REST_OK = 'success'
@@ -136,6 +138,7 @@ ROUTER_TYPE_LSR = 'lsr'
 LSR_DPID = '0000000000000004'
 
 PRIORITY_TYPE_ROUTE = 'priority_route'
+
 def get_priority(priority_type, vid=0, route=None):
 	log_msg = None
 	priority = priority_type
